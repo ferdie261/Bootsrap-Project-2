@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS (optional) -->
+    <style>
+        .hero {
+            background-color: #f8f9fa;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .project-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .skills-bar {
+            background-color: #e9ecef;
+            border-radius: 25px;
+        }
+
+        .skills-bar .progress-bar {
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Fernando S. Fernandez</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+ <!--    <section id="hero" class="hero d-flex align-items-center">
+        <div class="container">
+            <h1>Hello, I'm [Your Name]</h1>
+            <p>I'm a passionate web developer who creates modern, responsive websites and applications.</p>
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+        </div>
+    </section> -->
+
+<!-- Hero Section with Full-Width Background Image -->
+<section id="hero" class="hero d-flex align-items-center" style="background-image: url('images/fcover.png'); background-size: cover; background-position: center; height: 100vh;">
+    <div class="container text-center text-white">
+        <h1 style="color: whitesmoke;">Hello, I'm Fernando S. Fernandez</h1>
+        <p style="color: whitesmoke;">I'm a passionate web developer who creates modern,<br> responsive websites and applications.</p>
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>About Me</h2>
+                    <!-- <p>I'am aspiring web developer transitioning into a new career path. I'am deeply fascinated by the rapid growth of technology and driven by a desire to help people build websites that reflect their vision. This passion motivates me to continuously learn and expand my knowledge, from the fundamentals all the way to the latest advancements.</p> -->
+                     <p>I am an aspiring web developer transitioning on a new career path. My fascination with the rapid evolution of technology fuels my drive to help people create websites that truly reflect their vision. This passion inspires me to continuously learn and grow, building my knowledge from the fundamentals to the most advanced innovations.</p>
+                    <p>With a keen eye for design and attention to detail, I strive to deliver high-quality work that meets clients' needs.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/faboutme.png" class="img-fluid rounded" alt="About Me Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card mb-4">
+                        <img src="images/fhtml.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">This is a basic HTML webpage. It uses simple tags like headings, paragraphs, and links to structure content. And While the code remains accessible and beginner-friendly, the layout is straightforward, without styling and reflecting my early step in learning how to create and organize web pages.</p>
+                            <a href="https://ferdie261.github.io/html_foundation/" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card mb-4">
+                        <img src="images/fcss.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Cascading Style Sheet</h5>
+                            <p class="card-text">This is a basic CSS stylesheet. It applies rules like colors, fonts, etc., and spacing to enhance the look of the webpage. The styling is minimal and straightforward but includes reponsiveness. This is my early step in learning how to design and improve the visual presentation of web pages.</p>
+                            <a href="https://ferdie261.github.io/Project-2-CSS-Foundation/" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card project-card mb-4">
+                        <img src="images/fjs.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript</h5>
+                            <p class="card-text">This is my introductory JavaScript project. It goes beyond basic syntax by incorporating functions, event handling, and simple logic to create interactive behavior on the webpage.It represents a meaningful step in learning how to make web pages more engaging.</p>
+                            <a href="https://ferdie261.github.io/JavaScript-2-Project/" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Skills</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4>HTML</h4>
+                    <div class="progress skills-bar mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 95%;" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100">95%</div>
+                    </div>
+
+                    <h4>CSS</h4>
+                    <div class="progress skills-bar mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 95%;" aria-valuenow="85"
+                            aria-valuemin="0" aria-valuemax="100">95%</div>
+                    </div>
+
+                    <h4>JavaScript</h4>
+                    <div class="progress skills-bar mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 90%;" aria-valuenow="75"
+                            aria-valuemin="0" aria-valuemax="100">90%</div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Bootstrap</h4>
+                    <div class="progress skills-bar mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="80"
+                            aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+
+                    <h4>PHP</h4>
+                    <div class="progress skills-bar mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 85%;" aria-valuenow="70"
+                            aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+
+                    <h4>MySQL</h4>
+                    <div class="progress skills-bar mb-3">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: 85%;" aria-valuenow="65"
+                            aria-valuemin="0" aria-valuemax="100">85%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2026 Fernando S. Fernandez. All Rights Reserved.</p>
+    <p>Follow me on 
+        <a href="https://www.linkedin.com/login" target="_blank" class="text-white">LinkedIn</a>, 
+        <a href="https://github.com/" target="_blank" class="text-white">GitHub</a>, 
+        <a href="https://x.com/" target="_blank" class="text-white">Twitter</a>
+    </p>
+</footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
